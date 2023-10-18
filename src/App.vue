@@ -1,26 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <!-- <mcv-topbar /> -->
+    <router-view></router-view>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import McvTopbar from '@/components/Topbar.vue'
+// import { actionTypes } from '@/store/modules/auth';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  // components: {
+  //   // McvTopbar
+  // },
+  // mounted() {
+  //   this.$store.dispatch(actionTypes.getCurrentUser)
+  // }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
